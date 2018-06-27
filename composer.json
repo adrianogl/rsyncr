@@ -1,0 +1,26 @@
+{
+    "name": "adrianogl/rsyncr",
+    "description": "Rsyncr: Sync files between local and remote servers with rsync",
+    "keywords": ["ssh", "rsync"],
+    "type": "project",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Adriano Gonçalves",
+            "email": "adgoleva@gmail.com"
+        }
+    ],
+    "require": {
+        "symfony/console": "^4.1",
+        "symfony/yaml": "^4.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "Rsyncr\\": "src/"
+        }
+    },
+    "minimum-stability": "stable",
+    "bin": [
+        "bin/rsyncr"
+    ]
+}
