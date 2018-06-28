@@ -2,9 +2,17 @@
 <?php
 require __DIR__.'/../vendor/autoload.php';
 
-use Rsyncr\Command\HelloCommand;
+use Rsyncr\Command\AddCommand;
+use Rsyncr\Command\ServersCommand;
+use Rsyncr\Command\DownloadCommand;
+use Rsyncr\Command\UploadCommand;
+use Rsyncr\Command\DeleteCommand;
 use Symfony\Component\Console\Application;
 
 $application = new Application('Rsyncr', '0.1-dev');
-$application->add(new HelloCommand());
+$application->add(new AddCommand());
+$application->add(new ServersCommand());
+$application->add(new DownloadCommand());
+$application->add(new UploadCommand());
+$application->add(new DeleteCommand());
 $application->run();
